@@ -19,6 +19,46 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        mod_gui_h_left: mod_gui_h_left {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_GUI_H_LEFT";
+            bindings = <&kp H>, <&kp LEFT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        mod_gui_j_down: mod_gui_j_down {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_GUI_J_DOWN";
+            bindings = <&kp J>, <&kp DOWN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        mod_gui_k_up: mod_gui_k_up {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_GUI_K_UP";
+            bindings = <&kp K>, <&kp UP>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
+
+        mod_gui_l_right: mod_gui_l_right {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_GUI_L_RIGHT";
+            bindings = <&kp L>, <&kp RIGHT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_RGUI)>;
+        };
     };
 
     keymap {
@@ -27,11 +67,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL   &kp EXCLAMATION  &kp LEFT_BRACKET  &kp LBRC     &kp LEFT_PARENTHESIS  &kp DLLR  &kp PERCENT                                                 &kp PLUS   &kp CARET  &kp RPAR   &kp RBRC       &kp RBKT          &kp STAR  &kp MINUS
-&kp TAB     &kp Q            &kp W             &kp E        &kp R                 &kp T     &none                                                       &none      &kp Y      &kp U      &kp I          &kp O             &kp P     &kp FSLH
-&kp ESC     &kp A            &kp S             &kp D        &kp F                 &kp G     &none        &kp LALT  &kp LGUI       &kp RGUI   &kp RALT   &none      &kp H      &kp J      &kp K          &kp L             &kp SEMI  &kp SQT
-&kp LSHIFT  &kp Z            &kp X             &kp C        &kp V                 &kp B                            &kp LCTRL      &kp RCTRL                        &kp N      &kp M      &kp COMMA      &kp DOT           &kp BSLH  &kp RSHIFT
-&mo 4       &kp GRAVE        &kp HASH          &kp AT_SIGN  &kp AMPERSAND                   &kp BSPC     &mo 1     &none          &none      &kp ENTER  &kp SPACE             &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &kp PIPE  &mo 5
+&kp EQUAL      &kp EXCLAMATION  &kp LEFT_BRACKET  &kp LBRC     &kp LEFT_PARENTHESIS  &kp DLLR  &kp PERCENT                                                 &kp PLUS   &kp CARET  &kp RPAR   &kp RBRC       &kp RBKT          &kp STAR  &kp MINUS
+&kp TAB        &kp Q            &kp W             &kp E        &kp R                 &kp T     &none                                                       &none      &kp Y      &kp U      &kp I          &kp O             &kp P     &kp FSLH
+&mt ESC LCTRL  &kp A            &kp S             &kp D        &kp F                 &kp G     &none        &kp LALT  &kp LGUI       &kp RGUI   &kp RALT   &none      &kp H      &kp J      &kp K          &kp L             &kp SEMI  &kp SQT
+&kp LSHIFT     &kp Z            &kp X             &kp C        &kp V                 &kp B                            &kp LCTRL      &kp RCTRL                        &kp N      &kp M      &kp COMMA      &kp DOT           &kp BSLH  &kp RSHIFT
+&mo 4          &kp GRAVE        &kp HASH          &kp AT_SIGN  &kp AMPERSAND                   &kp BSPC     &mo 1     &none          &none      &kp ENTER  &kp SPACE             &kp TILDE  &kp LESS_THAN  &kp GREATER_THAN  &kp PIPE  &mo 5
             >;
         };
 
